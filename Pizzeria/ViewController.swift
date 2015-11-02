@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
 
+    
+    
     @IBOutlet var ddlTamaños: UIPickerView!
-    
-    
     var tamañosPizza :[String] = [String]()
+    var seleccion : String?
+    var pizza = Pizza()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,6 +28,14 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let siguienteVista = segue.destinationViewController as! TipoMasaViewController
+        var valor  = seleccion!
+        pizza.tamaño = valor
+        siguienteVista.pizza = pizza
         
     }
     
@@ -45,6 +56,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
+        seleccion = tamañosPizza[Int(row.value)]
     }
     
     

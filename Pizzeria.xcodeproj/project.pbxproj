@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D815C1621BCB52B200027D0C /* TipoQuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815C1611BCB52B200027D0C /* TipoQuesoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D815C1641BCB599A00027D0C /* TipoMasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815C1631BCB599A00027D0C /* TipoMasaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D82135471BD1243F00962E16 /* Entidades in Resources */ = {isa = PBXBuildFile; fileRef = D82135461BD1243F00962E16 /* Entidades */; settings = {ASSET_TAGS = (); }; };
+		D821354B1BD12D5D00962E16 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821354A1BD12D5D00962E16 /* Pizza.swift */; settings = {ASSET_TAGS = (); }; };
+		D821354D1BD12DD700962E16 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821354C1BD12DD700962E16 /* IngredientesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D821354F1BD1339200962E16 /* ConfirmarPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821354E1BD1339200962E16 /* ConfirmarPizzaViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D8CD66241BCACE6A009F7300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD66231BCACE6A009F7300 /* AppDelegate.swift */; };
 		D8CD66261BCACE6A009F7300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD66251BCACE6A009F7300 /* ViewController.swift */; };
 		D8CD66291BCACE6A009F7300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8CD66271BCACE6A009F7300 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D815C1611BCB52B200027D0C /* TipoQuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoQuesoViewController.swift; sourceTree = "<group>"; };
+		D815C1631BCB599A00027D0C /* TipoMasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoMasaViewController.swift; sourceTree = "<group>"; };
+		D82135461BD1243F00962E16 /* Entidades */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Entidades; sourceTree = "<group>"; };
+		D821354A1BD12D5D00962E16 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pizza.swift; path = Entidades/Pizza.swift; sourceTree = "<group>"; };
+		D821354C1BD12DD700962E16 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
+		D821354E1BD1339200962E16 /* ConfirmarPizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmarPizzaViewController.swift; sourceTree = "<group>"; };
 		D8CD66201BCACE6A009F7300 /* Pizzeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizzeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CD66231BCACE6A009F7300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8CD66251BCACE6A009F7300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +109,18 @@
 		D8CD66221BCACE6A009F7300 /* Pizzeria */ = {
 			isa = PBXGroup;
 			children = (
+				D821354A1BD12D5D00962E16 /* Pizza.swift */,
 				D8CD66231BCACE6A009F7300 /* AppDelegate.swift */,
 				D8CD66251BCACE6A009F7300 /* ViewController.swift */,
 				D8CD66271BCACE6A009F7300 /* Main.storyboard */,
+				D815C1611BCB52B200027D0C /* TipoQuesoViewController.swift */,
+				D82135461BD1243F00962E16 /* Entidades */,
 				D8CD662A1BCACE6A009F7300 /* Assets.xcassets */,
 				D8CD662C1BCACE6A009F7300 /* LaunchScreen.storyboard */,
 				D8CD662F1BCACE6A009F7300 /* Info.plist */,
+				D815C1631BCB599A00027D0C /* TipoMasaViewController.swift */,
+				D821354C1BD12DD700962E16 /* IngredientesViewController.swift */,
+				D821354E1BD1339200962E16 /* ConfirmarPizzaViewController.swift */,
 			);
 			path = Pizzeria;
 			sourceTree = "<group>";
@@ -230,6 +248,7 @@
 			files = (
 				D8CD662E1BCACE6A009F7300 /* LaunchScreen.storyboard in Resources */,
 				D8CD662B1BCACE6A009F7300 /* Assets.xcassets in Resources */,
+				D82135471BD1243F00962E16 /* Entidades in Resources */,
 				D8CD66291BCACE6A009F7300 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D821354D1BD12DD700962E16 /* IngredientesViewController.swift in Sources */,
+				D815C1641BCB599A00027D0C /* TipoMasaViewController.swift in Sources */,
+				D815C1621BCB52B200027D0C /* TipoQuesoViewController.swift in Sources */,
 				D8CD66261BCACE6A009F7300 /* ViewController.swift in Sources */,
+				D821354B1BD12D5D00962E16 /* Pizza.swift in Sources */,
 				D8CD66241BCACE6A009F7300 /* AppDelegate.swift in Sources */,
+				D821354F1BD1339200962E16 /* ConfirmarPizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +505,7 @@
 				D8CD664A1BCACE6A009F7300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8CD664B1BCACE6A009F7300 /* Build configuration list for PBXNativeTarget "PizzeriaTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +514,7 @@
 				D8CD664D1BCACE6A009F7300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8CD664E1BCACE6A009F7300 /* Build configuration list for PBXNativeTarget "PizzeriaUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +523,7 @@
 				D8CD66501BCACE6A009F7300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
